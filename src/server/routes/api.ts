@@ -6,5 +6,6 @@ import { Request, Response } from "express";
  * @route GET /api
  */
 export const getApi = async (req: Request, res: Response) => {
-  return res.status(200).end();
+  console.log(`GET /api`);
+  return res.status(200).send('hello world');
 };
